@@ -1,141 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f8e8e8">
-<title>One Year, A Thousand Little Loves</title>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8e8e8"><title>For My Mahal ♡</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#654d55;--muted:#927b82;--rose:#d99da9;--cream:#fffaf6;--line:#ead4d6}
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;color:var(--ink);font-family:"DM Sans",sans-serif;background:linear-gradient(125deg,#fff5ef,#fbe5e9,#f3e8f6,#fff3e8);background-size:300% 300%;animation:sky 22s ease infinite;overflow-x:hidden}
-@keyframes sky{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
-.floaties{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
-.floaties span{position:absolute;bottom:-50px;color:#d89eae;opacity:.35;animation:rise linear infinite;font-size:20px}
-.floaties span:nth-child(1){left:8%;animation-duration:18s}.floaties span:nth-child(2){left:24%;animation-duration:23s;animation-delay:4s}.floaties span:nth-child(3){left:43%;animation-duration:19s;animation-delay:8s}.floaties span:nth-child(4){left:68%;animation-duration:25s;animation-delay:2s}.floaties span:nth-child(5){left:87%;animation-duration:21s;animation-delay:6s}
-@keyframes rise{to{transform:translateY(-115vh) rotate(250deg);opacity:0}}
-main{position:relative;z-index:1;width:min(900px,92%);margin:auto;padding:55px 0 70px;text-align:center}
+:root{--ink:#71545e;--muted:#a1848d;--rose:#ca8e9d}*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:"DM Sans",sans-serif;background:linear-gradient(125deg,#fff6ef,#f9e5e9,#f2e9f6,#fff2e8);background-size:300% 300%;animation:sky 22s ease infinite}
+@keyframes sky{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+main{position:relative;width:min(850px,92%);margin:auto;padding:48px 0 65px;text-align:center}
+h1,h2,.serif{font-family:"Playfair Display",serif;font-weight:500}h1{font-size:clamp(2.5rem,7vw,4.6rem);line-height:1.08;margin:15px 0;color:#765661}
 .eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:#a47c88}
-h1,h2,.serif{font-family:"Playfair Display",serif;font-weight:500}
-h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1.05;margin:14px 0;color:#765661}
-.subtitle{max-width:570px;margin:0 auto 30px;color:var(--muted);line-height:1.8}
-.card{background:rgba(255,251,248,.78);border:1px solid rgba(255,255,255,.85);box-shadow:0 18px 60px #a97d8b20;border-radius:28px;padding:clamp(22px,5vw,46px);backdrop-filter:blur(12px)}
-.prompt{font-family:"Playfair Display",serif;font-size:1.55rem;margin:0 0 9px}
-.hint{font-size:.9rem;color:var(--muted);margin:0 0 25px}
-.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
-.choice{border:1px solid var(--line);background:#fffaf8;border-radius:18px;padding:18px 14px;color:var(--ink);font:inherit;cursor:pointer;transition:.25s}
-.choice:hover{transform:translateY(-4px);background:#fff;box-shadow:0 10px 25px #b87e8c20;border-color:#d7a9b3}
-.choice .emoji{display:block;font-size:1.8rem;margin-bottom:8px}
-.choice strong{display:block;font-family:"Playfair Display",serif;font-size:1.2rem;font-weight:500}
-.choice small{display:block;color:var(--muted);margin-top:5px}
-.hidden{display:none!important}
-.envelope-stage{padding:26px 0 10px}
-.envelope{position:relative;width:min(310px,80vw);height:190px;margin:25px auto 15px;cursor:pointer;filter:drop-shadow(0 15px 18px #9c6c7b25)}
+.subtitle,.hint{color:var(--muted);line-height:1.8}.subtitle{max-width:570px;margin:0 auto 28px}
+.panel{background:#fffbf8d9;border:1px solid #ffffffd9;box-shadow:0 18px 60px #a97d8b20;border-radius:28px;padding:clamp(22px,5vw,42px);backdrop-filter:blur(12px)}
+.panel-title{font:500 1.55rem "Playfair Display",serif;margin:0 0 8px}.hint{font-size:.9rem;margin:0 0 22px}
+.dots{display:flex;justify-content:center;gap:12px;margin:26px 0}.dot{width:13px;height:13px;border:1.5px solid #c99aa6;border-radius:50%}.dot.filled{background:#c48798;border-color:#c48798;box-shadow:0 0 0 4px #c4879818}
+.keypad{width:min(300px,100%);margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.key{border:1px solid #ead2d8;background:#fffaf8;color:#765661;border-radius:15px;min-height:58px;font:500 1.2rem "DM Sans",sans-serif;cursor:pointer}
+.key:hover{background:#fff;transform:translateY(-2px)}.key.enter{grid-column:1/-1;background:#c98f9e;color:white;border-color:#c98f9e}.key.utility{font-size:.9rem;color:#9b7480}
+.error{min-height:22px;color:#b45e72;font-size:.85rem;margin:14px 0 0}.hidden{display:none!important}
+.envelope{position:relative;width:min(320px,82vw);height:195px;margin:26px auto 18px;cursor:pointer;filter:drop-shadow(0 15px 18px #9c6c7b25);outline:none}
 .env-back{position:absolute;inset:0;background:#e9bfc6;border-radius:8px}
 .env-front{position:absolute;inset:0;background:linear-gradient(145deg,#f5d8d8,#e8b9c3);clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);border-radius:8px}
-.env-flap{position:absolute;inset:0;background:#f7dfe0;clip-path:polygon(0 0,100% 0,50% 61%);transform-origin:top;transition:transform .8s ease;z-index:3}
-.seal{position:absolute;z-index:4;left:50%;top:51%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#c77f91;color:white;font-size:20px;box-shadow:0 3px 8px #8f536440;transition:.4s}
-.envelope.open .env-flap{transform:rotateX(180deg);z-index:0}
-.envelope.open .seal{opacity:0;transform:translate(-50%,-30%) scale(.6)}
-.tap{font-size:.86rem;color:var(--muted)}
-.letter{max-width:760px;margin:28px auto 0;text-align:left;background:#fffdfb;border:1px solid #f0dfe0;border-radius:20px;padding:clamp(22px,5vw,44px);box-shadow:0 15px 45px #9b6c7b17;animation:appear .8s ease both}
-@keyframes appear{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-.letter h2{text-align:center;font-size:2rem;color:#986c79;margin:0 0 5px}
-.letter .to{text-align:center;color:#b18a94;font-size:.85rem;margin-bottom:25px}
-.letter p{line-height:1.9;color:#725e64;font-size:.98rem;white-space:pre-line}
-.signature{font-family:"Playfair Display",serif;font-style:italic;text-align:right;font-size:1.5rem;color:#986c79;margin-top:28px}
-.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}
-.action{border:1px solid #d9b2bb;background:#fff9f8;color:#805e68;padding:11px 18px;border-radius:30px;cursor:pointer;font:inherit}
-.action.primary{background:#c98f9e;color:white;border-color:#c98f9e}
+.env-flap{position:absolute;inset:0;background:#f7dfe0;clip-path:polygon(0 0,100% 0,50% 61%);transform-origin:top;transition:transform .85s;z-index:3}
+.seal{position:absolute;z-index:4;left:50%;top:51%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#c77f91;color:white;font-size:22px;transition:.4s}
+.envelope.open .env-flap{transform:rotateX(180deg);z-index:0}.envelope.open .seal{opacity:0}
+.note{font:500 clamp(1.4rem,4vw,1.9rem) "Playfair Display",serif;color:#986c79;margin:8px 0}
+.tap,.music-note{font-size:.86rem;color:var(--muted)}
+.letter{margin:30px auto 0;text-align:left;background:#fffdfb;border:1px solid #f0dfe0;border-radius:20px;padding:clamp(22px,5vw,44px);box-shadow:0 15px 45px #9b6c7b17;animation:appear .8s}
+@keyframes appear{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.letter h2{text-align:center;font-size:clamp(1.8rem,5vw,2.5rem);color:#986c79;margin:0 0 5px}.to{text-align:center;color:#b18a94;font-size:.85rem;margin-bottom:25px}
+.letter p{line-height:1.95;color:#725e64;font-size:.98rem;margin:0 0 1.15em}.signature{font:italic 1.55rem "Playfair Display",serif;text-align:right;color:#986c79;margin-top:28px}
+.floaties{position:fixed;inset:0;pointer-events:none;overflow:hidden}.floaties span{position:absolute;bottom:-40px;color:#d89eae;opacity:.35;animation:rise 22s linear infinite}.floaties span:nth-child(1){left:8%}.floaties span:nth-child(2){left:27%;animation-delay:5s}.floaties span:nth-child(3){left:52%;animation-delay:9s}.floaties span:nth-child(4){left:78%;animation-delay:3s}
+@keyframes rise{to{transform:translateY(-110vh) rotate(220deg);opacity:0}}
 footer{margin-top:35px;color:#a58b92;font-size:.78rem}
-@media(max-width:540px){main{padding-top:38px}.choices{grid-template-columns:1fr}.choice{display:flex;align-items:center;text-align:left;gap:14px}.choice .emoji{margin:0}.choice small{margin-top:3px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-</style>
-</head>
-<body>
-<div class="floaties" aria-hidden="true"><span>♡</span><span>✿</span><span>♡</span><span>✧</span><span>♡</span></div>
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<div class="floaties" aria-hidden="true"><span>♡</span><span>✿</span><span>♡</span><span>✧</span></div>
 <main>
-  <div class="eyebrow">A little something, just for you</div>
-  <h1>One year,<br><em>a thousand little loves.</em></h1>
-  <p class="subtitle">Happy first anniversary, mahal. Whatever kind of day you're having, there's a letter here for you. Choose the feeling that is closest to your heart right now.</p>
-  <section class="card" id="home">
-    <p class="prompt">How is your heart today?</p>
-    <p class="hint">There is no wrong answer. Pick honestly. ♡</p>
-    <div class="choices">
-      <button class="choice" data-feeling="happy"><span class="emoji">☀️</span><span><strong>I'm happy</strong><small>Let's celebrate this little joy.</small></span></button>
-      <button class="choice" data-feeling="sad"><span class="emoji">🌧️</span><span><strong>I'm feeling down</strong><small>I could use a little comfort.</small></span></button>
-      <button class="choice" data-feeling="overwhelmed"><span class="emoji">🫧</span><span><strong>I'm overwhelmed</strong><small>Everything feels like a lot.</small></span></button>
-      <button class="choice" data-feeling="missing"><span class="emoji">💌</span><span><strong>I miss you</strong><small>I wish you were right here.</small></span></button>
-    </div>
-  </section>
-  <section id="letterArea" class="hidden">
-    <div class="envelope-stage">
-      <p class="prompt" id="envelopePrompt">A letter is waiting for you...</p>
-      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open your anniversary letter">
-        <div class="env-back"></div><div class="env-front"></div><div class="env-flap"></div><div class="seal">♡</div>
-      </div>
-      <div class="tap" id="tapText">Tap the envelope to open your letter</div>
-    </div>
-    <article class="letter hidden" id="letter">
-      <h2 id="letterTitle"></h2>
-      <div class="to">A note for you, from me ♡</div>
-      <div id="letterBody"></div>
-      <div class="signature">Always yours ♡</div>
-    </article>
-    <div class="actions">
-      <button class="action" id="backBtn">Choose another feeling</button>
-      <button class="action primary" id="againBtn">Read this letter again</button>
-    </div>
-  </section>
-  <footer>Made with love, for our first year and all the years still to come.</footer>
+<div class="eyebrow">A little surprise, made with love</div>
+<h1>Just for you,<br><em>my Mahal.</em></h1>
+<p class="subtitle">There’s a little something waiting for you. Take your time. This one is from my heart. ♡</p>
+<section class="panel" id="passwordScreen">
+<p class="panel-title">A little secret between us</p><p class="hint">Enter the password to continue ♡</p>
+<div class="dots" aria-label="Password digits"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+<div class="keypad">
+<button class="key" data-digit="1">1</button><button class="key" data-digit="2">2</button><button class="key" data-digit="3">3</button>
+<button class="key" data-digit="4">4</button><button class="key" data-digit="5">5</button><button class="key" data-digit="6">6</button>
+<button class="key" data-digit="7">7</button><button class="key" data-digit="8">8</button><button class="key" data-digit="9">9</button>
+<button class="key utility" id="clearBtn">Clear</button><button class="key" data-digit="0">0</button><button class="key utility" id="backBtn">⌫</button>
+<button class="key enter" id="enterBtn">Enter ♡</button></div><p class="error" id="error" aria-live="polite"></p>
+</section>
+<section id="surpriseScreen" class="hidden">
+<p class="panel-title">You made it, mahal ♡</p><p class="hint">A little letter, made just for you.</p>
+<div class="note">Happy 1st Anniversary, mahal</div>
+<div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open your anniversary envelope"><div class="env-back"></div><div class="env-front"></div><div class="env-flap"></div><div class="seal">♡</div></div>
+<div class="tap" id="tap">Tap the envelope to open your letter</div><p class="music-note" id="musicNote">A song is waiting for you, too. ♡</p>
+<article class="letter hidden" id="letter"><h2>Happy first anniversary, Mahal! ❤️</h2><div class="to">A letter from me, to you ♡</div>
+<p>Happy first anniversary, Mahal! ❤️</p>
+<p>Honestly, ang weird isipin na one year na tayo. Ilang taon tayong magkakilala pero wala pa tayong masyadong memories together. Hindi ko na nga maalala kung paano nagsimula yung pagtawag natin sa isa’t isa ng “Pare.” Wala rin tayong masyadong interactions in person noon. More on chat lang, asaran, tawagan ng pangit, tapos mawawala na naman for months. Minsan magkakalaro sa ML, then back to being strangers ulit kapag offline na. HAHAHA. Ang funny lang isipin na ganun tayo dati.</p>
+<p>Pero look at us now. From random “Pare” messages to good morning and good night calls. From asaran lang to someone I get to share my everyday life with. From being people who barely talked in person to becoming each other’s person. Life really has its own way of surprising us.</p>
+<p>I guess timing really matters. May panahon na hindi pa talaga ako ready. Marami pa akong gustong ma-achieve para sa sarili ko, at alam kong hindi ko pa kayang magbigay ng space para sa ibang tao sa buhay ko. May mga priorities at pangarap akong gusto munang tuparin. And even when we had the chance before, hindi pa rin nag-work out. We both had our own reasons and things to figure out.</p>
+<p>But now, I’m glad we gave this another chance. I’m glad you didn’t give up on getting to know me again, even when I wasn’t making it easy for you. HAHAHA. Alam kong may mga times na ang sungit ko at ang cold ko. But thank you for being patient with me. Thank you for not rushing me and for allowing me to take my time until I was ready to open my heart again.</p>
+<p>Gusto kong malaman mo kung gaano kita naa-appreciate. Hindi lang sa malalaking bagay na ginagawa mo, kundi lalo na sa mga maliliit na bagay na baka hindi mo rin napapansing napapansin ko. Yung time na binibigay mo sa akin kahit magkalayo tayo, yung mga bagay na naaalala mo, yung mga surprises, gifts, at lalong lalo na yung pag take ng effort para baguhin yung mga bagay na ayaw ko. I appreciate all of them. I may not always express it perfectly, pero nakikita ko lahat ng efforts mo.</p>
+<p>Thank you for making me feel loved in ways I didn’t even know I needed. Thank you for making me feel na hindi ko kailangang laging maging strong, na hindi ko kailangang solohin lahat, at okay lang din pala na may taong gustong mag-alaga sa akin.</p>
+<p>I’ve spent so much time being independent, figuring things out on my own, and making sure I could provide for myself. Sanay akong ako yung kailangang umintindi, mag-adjust, at mag-isip ng lahat. Minsan nakakalimutan ko na pwede rin pala akong maging soft, vulnerable, at alagaan. But with you, I get to experience that side of myself. Hindi ko kailangang laging maging matapang. I get to be your girl, and I love that feeling.</p>
+<p>I love how thoughtful you are, how you remember even the smallest details, how you always make time for me, and how you never make me question whether you love me. I love how patient you are, especially kapag mahirap akong intindihin. HAHAHA. Thank you for not matching my energy kapag nagtatampo or nagagalit ako. I know I’m not always easy to deal with, and I have my own flaws, too. I’m still learning, and I hope you know na gusto ko ring maging better partner para sa’yo, just as you make me want to be better every day.</p>
+<p>Isa rin sa mga bagay na sobrang na-appreciate ko sa’yo ay yung effort mong makilala at makausap si Mama. You probably don’t know how much that means to me. Thank you for understanding na hindi lang ako ang bahagi ng buhay ko, kundi pati yung mga taong mahalaga sa akin.</p>
+<p>Sometimes, naiisip ko lahat ng pinagdaanan ko bago tayo naging tayo. There were moments when I questioned myself, my decisions, and even my worth. May mga panahong sobrang bigat ng lahat at hindi ko alam kung magiging okay pa ba ulit ang lahat. But looking back now, I thank God was redirecting me. Maybe there were things I needed to experience and lessons I needed to learn before I could appreciate the kind of love I have now. And I’m grateful na nalagpasan ko lahat ng yun.</p>
+<p>I’m not saying na perfect ka or na magiging madali palagi ang relationship natin. Alam kong marami pa tayong kailangang matutunan tungkol sa isa’t isa. Darating din yung mga araw na magkakaroon tayo ng misunderstandings, disagreements, at mga pagkakataong hindi tayo magkakasundo. I don’t expect us to always be happy or to never have problems. Ang hiling ko lang ay kapag dumating yung mga panahong yun, piliin pa rin nating intindihin ang isa’t isa. Let’s never be afraid to communicate, apologize, compromise, and work things out. Gusto kong maging mag-partner tayo, hindi magkalaban, lalo na kapag may problema.</p>
+<p>And kahit magkalayo tayo, sana hindi mo pagdudahan kung gaano ko naa-appreciate lahat ng ginagawa mo para sa relationship natin. Alam kong hindi madali ang long distance. May mga pagkakataong gusto lang kitang mayakap, makasama, o makausap nang hindi kailangang tumingin sa screen. But thank you for making the distance feel a little less difficult. Thank you for always making time for me and for making me feel na bahagi pa rin ako ng everyday life mo kahit nasa magkaibang panig tayo ng mundo.</p>
+<p>Excited na ako sa araw na hindi na natin kailangang maghintay ng oras para lang makapag-usap o magbilang ng araw bago magkita. Yung pwede na tayong kumain together, mag-date, manood ng movies, mag-grocery, mag-asikaso ng kung anu-ano, or simply enjoy each other’s company. I look forward to making more memories with you, even the simplest and most ordinary ones.</p>
+<p>I appreciate your patience, consistency, generosity, kindness, and the way you love me. I hope I make you feel just as loved, appreciated, and valued as you make me feel. Hindi man ako palaging perfect, I promise to keep learning how to love you better.</p>
+<p>And please know na hindi lang kita gustong kasama sa masasayang araw. Gusto ko rin nandiyan ako para sa’yo kapag pagod ka, stressed, worried, or having a bad day. Hindi mo rin kailangang laging maging strong sa harap ko. You can tell me anything, even the things that bother you or the things you don’t usually share with other people. Gusto ko rin maging pahinga mo, just as you have become mine.</p>
+<p>I don’t know exactly what the future holds for us, pero alam kong gusto kong makasama ka habang hinaharap natin yun. Gusto kong marami pa tayong anniversaries na i-celebrate, makita kang ma-achieve lahat ng dreams mo, maabot din natin yung mga personal goals natin, makapag-travel together, at makabuo ng buhay na pareho nating pinapangarap. I want to see you succeed, and I hope you’ll let me be there to celebrate every little and big achievement along the way.</p>
+<p>If there’s one thing I want you to remember, I’m so happy na I found you again. After all those years, all those random conversations, all those times na nawalan tayo ng communication, and everything that happened in between, it’s you I’m getting to know and love in a completely different way now.</p>
+<p>Thank you for coming back into my life. Thank you for choosing me, for being patient with me, and for loving me the way you do. Thank you for making me realize na love doesn’t always have to feel difficult. Na pwede rin pala itong maging peaceful, reassuring, at something na hindi mo kailangang pagdudahan araw-araw.</p>
+<p>From being my high school “Pare” na mahilig mang-asar, to being my boyfriend, my favorite person, and now, my Mahal. Who would’ve thought? Tayo lang nakaisip nun HAHAHA.</p>
+<p>Happy first anniversary, Mahal! I hope this is just the beginning of many more years together. I love you so much, and I’m looking forward to everything that’s still waiting for us.</p>
+<p>Here’s to more memories, more laughter, more random kwentuhan, more lambing, more adventures, and many more years of choosing each other.</p>
+<p>I love you, Mahal. Always. ❤️</p>
+<div class="signature">I love you, Mahal. Always. ❤️</div></article>
+</section><footer>One year down, and many more little moments to come. ♡</footer>
 </main>
+<audio id="music" preload="auto" loop><source src="Dulo%20Ng%20Pahina.mp3" type="audio/mpeg"></audio>
 <script>
-const letters = {
-happy: {
-title:"For the days your heart is full",
-paragraphs:[
-``
-]},
-sad: {
-title:"For the days that feel a little heavy",
-paragraphs:[
-``
-]},
-overwhelmed: {
-title:"For when everything feels like too much",
-paragraphs:[
-``
-]},
-missing: {
-title:"For when you wish I were beside you",
-paragraphs:[
-``
-]}
-};
-
-const home=document.getElementById('home'), area=document.getElementById('letterArea');
-const envelope=document.getElementById('envelope'), letter=document.getElementById('letter');
-let selected='happy';
-document.querySelectorAll('.choice').forEach(btn=>btn.addEventListener('click',()=>{
-  selected=btn.dataset.feeling;
-  const data=letters[selected];
-  document.getElementById('letterTitle').textContent=data.title;
-  const body=document.getElementById('letterBody'); body.innerHTML='';
-  data.paragraphs.forEach(p=>{const el=document.createElement('p');el.textContent=p;body.appendChild(el)});
-  home.classList.add('hidden');area.classList.remove('hidden');
-  envelope.classList.remove('open');letter.classList.add('hidden');
-  document.getElementById('tapText').textContent='Tap the envelope to open your letter';
-  document.getElementById('envelopePrompt').textContent='A little letter, chosen just for this feeling...';
-  window.scrollTo({top:0,behavior:'smooth'});
-}));
-function openLetter(){envelope.classList.add('open');document.getElementById('tapText').textContent='A little love, just for you ♡';setTimeout(()=>{letter.classList.remove('hidden');letter.scrollIntoView({behavior:'smooth',block:'start'})},550)}
-envelope.addEventListener('click',openLetter);
-envelope.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}});
-document.getElementById('backBtn').addEventListener('click',()=>{area.classList.add('hidden');home.classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})});
-document.getElementById('againBtn').addEventListener('click',()=>{letter.classList.add('hidden');envelope.classList.remove('open');document.getElementById('tapText').textContent='Tap the envelope to open your letter';window.scrollTo({top:0,behavior:'smooth'})});
-</script>
-</body>
-</html>
+const PASSWORD="031226";let typed="";
+const dots=[...document.querySelectorAll(".dot")],error=document.getElementById("error");
+function paint(){dots.forEach((d,i)=>d.classList.toggle("filled",i<typed.length))}
+function digit(n){if(typed.length<6){typed+=n;error.textContent="";paint()}}
+function clear(){typed="";error.textContent="";paint()}
+function enter(){if(typed===PASSWORD){document.getElementById("passwordScreen").classList.add("hidden");document.getElementById("surpriseScreen").classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})}else{error.textContent="Not quite, mahal. Try again. ♡";clear()}}
+document.querySelectorAll("[data-digit]").forEach(b=>b.addEventListener("click",()=>digit(b.dataset.digit)));
+document.getElementById("clearBtn").onclick=clear;
+document.getElementById("backBtn").onclick=()=>{typed=typed.slice(0,-1);paint();error.textContent=""};
+document.getElementById("enterBtn").onclick=enter;
+document.addEventListener("keydown",e=>{if(document.getElementById("passwordScreen").classList.contains("hidden"))return;if(/^\d$/.test(e.key))digit(e.key);else if(e.key==="Backspace"){typed=typed.slice(0,-1);paint()}else if(e.key==="Enter")enter();else if(e.key==="Escape")clear()});
+let opened=false;
+async function openEnvelope(){if(opened)return;opened=true;const env=document.getElementById("envelope");env.classList.add("open");document.getElementById("tap").textContent="Opening a little piece of my heart... ♡";
+try{await document.getElementById("music").play();document.getElementById("musicNote").textContent="Now playing: Dulo Ng Pahina ♡"}catch(e){document.getElementById("musicNote").textContent="Your browser couldn't start the song. Check the MP3 file in the repository."}
+setTimeout(()=>{document.getElementById("letter").classList.remove("hidden");document.getElementById("tap").textContent="A little love, just for you. ♡";document.getElementById("letter").scrollIntoView({behavior:"smooth",block:"start"})},750)}
+const env=document.getElementById("envelope");env.addEventListener("click",openEnvelope);env.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openEnvelope()}});
+</script></body></html>
